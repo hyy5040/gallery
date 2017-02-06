@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: rgb(51,51,51);
+	overflow: hidden;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 5rem;
+	height: 1rem;
+}
+
+
+.poster {
+	position: absolute;
+	width: 1rem;
+	height: 1.4rem;
+	
+	background-color: #EEEEEE;
+	overflow: hidden;
+	transition-property: transform;
+    transition-duration: .5s;
+    perspective:1000;
+    -webkit-perspective: 1000; 
+
+}
+.photo {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0.08rem;
+	left: 0.1rem;
+	right: 0.1rem;
+	overflow: hidden;
+	width: 0.8rem;
+	height: 1.1rem;
+	max-width: 0.8rem;
+	max-height: 1.1rem;
+	background-repeat: no-repeat;
+	z-index: 14;
+	display: block;
+	transition-property: transform;
+    transition-duration: .5s;
+
+}
+
+.font {
+	position: relative;
+	top: 1.24rem;
+	padding: 0;
+	margin: 0;
+	display: block;
+	text-align: center;
+	font-size: 0.1rem;
+	z-index: 14;
+
+}
+.description{
+	padding: 0.08rem;
+	position: absolute;
+	font-size: 0.1rem;
+	z-index: 15;
+	display: none;
+	transform: rotateY(180deg);
+	-webkit-transform:rotateY(180deg); /* Safari and Chrome */
+	-moz-transform:rotateY(180deg); /* Firefox */
+	transition-property: transform;
+    transition-duration: .5s;
+
+}
+#circleBox{
+	position: relative;
+	width:2.2rem;
+	top: 1.75rem;
+	left: 1.5rem;
+	height: 0.2rem;
+	padding: 0.025rem;
+	z-index: 11;
+	
+}
+.circle {
+	margin: 0.05rem;
+	float: left;
+	width: 0.1rem;
+	height: 0.1rem;
+	background: rgb(170,170,170);
+	-moz-border-radius: 0.05rem;
+	-webkit-border-radius: 0.05rem;
+	border-radius: 0.05rem;
+}
